@@ -321,6 +321,57 @@
       "DarkBaseColor": "#FF2F7BAD",
       "LightPrimaryColor": "#FFCC4D11",
       "DarkPrimaryColor": "#FFCC4D11"
+    },
+    {
+      "Id": "BlueSteel",
+      "Name": "BlueSteel",
+      "LightRegionColor": "#FFF2FAFF",
+      "DarkRegionColor": "#FF00203B",
+      "LightBaseColor": "#FFEBEBEB",
+      "DarkBaseColor": "#FF616161",
+      "LightPrimaryColor": "#FF4682B4",
+      "DarkPrimaryColor": "#FF4682B4"
+    },
+    {
+      "Id": "Bold",
+      "Name": "Bold",
+      "LightRegionColor": "#FFFFFFFF",
+      "DarkRegionColor": "#FF000000",
+      "LightBaseColor": "#FFB8B8B8",
+      "DarkBaseColor": "#FF062F4F",
+      "LightPrimaryColor": "#FFB82601",
+      "DarkPrimaryColor": "#FFB82601"
+    },
+    {
+      "Id": "Modern",
+      "Name": "Modern",
+      "LightRegionColor": "#FFF2EDEC",
+      "DarkRegionColor": "#FF0A1612",
+      "LightBaseColor": "#FFC5C1C0",
+      "DarkBaseColor": "#FF1A2930",
+      "LightPrimaryColor": "#FFFBA100",
+      "DarkPrimaryColor": "#FFCC4D11"
+    },
+    {
+      "Id": "Maroon",
+      "Name": "Maroon",
+      "LightRegionColor": "#FFFFFFFF",
+      "DarkRegionColor": "#FF1A0000",
+      "LightBaseColor": "#FFCCB8B8",
+      "DarkBaseColor": "#FF331818",
+      "LightPrimaryColor": "#FFAA0000",
+      "DarkPrimaryColor": "#FF780000"
+    },
+    {
+      "Id": "Grape",
+      "Name": "Grape",
+      "LightRegionColor": "#FFF8EEE7",
+      "DarkRegionColor": "#FF49274A",
+      "LightBaseColor": "#FFF8C4FF",
+      "DarkBaseColor": "#FF5E564E",
+      "LightPrimaryColor": "#FF94618E",
+      "DarkPrimaryColor": "#FF94618E"
     }
+
   ]
 }

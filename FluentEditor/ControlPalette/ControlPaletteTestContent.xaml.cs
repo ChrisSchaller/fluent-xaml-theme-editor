@@ -2,6 +2,7 @@
 // Licensed under the MIT License.
 
 using Microsoft.Toolkit.Uwp.SampleApp.Data;
+using System;
 using System.ComponentModel;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
@@ -41,5 +42,25 @@ namespace FluentEditor.ControlPalette
         public DataGridDataSource DataGridDataProvider { get; }
 
         public ICollectionView DataGridDataView { get; set; }
+
+        private async void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            var dialog = new Windows.UI.Popups.MessageDialog("test", "title");
+
+            dialog.Commands.Add(new Windows.UI.Popups.UICommand("Yes") { Id = 0 });
+            dialog.Commands.Add(new Windows.UI.Popups.UICommand("No") { Id = 1 });
+
+            if (Windows.System.Profile.AnalyticsInfo.VersionInfo.DeviceFamily != "Windows.Mobile")
+            {
+                // Adding a 3rd command will crash the app when running on Mobile !!!
+                dialog.Commands.Add(new Windows.UI.Popups.UICommand("Maybe later") { Id = 2 });
+            }
+
+            dialog.DefaultCommandIndex = 0;
+            dialog.CancelCommandIndex = 1;
+
+            var result = await dialog.ShowAsync();
+
+        }
     }
 }

@@ -33,6 +33,8 @@ namespace FluentEditor.ControlPalette.Model
         ColorPalette DarkBase { get; }
         ColorPalette LightPrimary { get; }
         ColorPalette DarkPrimary { get; }
+
+        event Action<IControlPaletteModel, IColorPaletteEntry> ColorChanged;
     }
 
     public class ControlPaletteModel : IControlPaletteModel
@@ -197,6 +199,7 @@ namespace FluentEditor.ControlPalette.Model
         private void PaletteEntry_ActiveColorChanged(IColorPaletteEntry obj)
         {
             UpdateActivePreset();
+            ColorChanged?.Invoke(this, obj);
         }
 
         private void UpdateActivePreset()
@@ -343,5 +346,8 @@ namespace FluentEditor.ControlPalette.Model
         {
             get { return _darkPrimary; }
         }
+
+        public event Action<IControlPaletteModel, IColorPaletteEntry> ColorChanged;
+
     }
 }
